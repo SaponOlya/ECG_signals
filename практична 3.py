@@ -38,7 +38,7 @@ def exponential_smoothing(data, alpha):
     smoothed_data = [data[0]]
     for i in range(1, len(data)):
         smoothed_value = alpha * data[i] + (1 - alpha) * smoothed_data[i-1]  # формула експоненційного згладжування
-        smoothed_data.append(smoothed_value)
+        smoothed_data.append(sgmoothed_value)
     return smoothed_data
 
 
